@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>  
+    
+    <definition name="base.definition"  
+        template="/WEB-INF/views/tiles/layout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/views/tiles/header.jsp" />  
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/menu.jsp" />  
+        
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/views/tiles/footer.jsp" />  
+    </definition>  
+	   <definition name="base.login" template="/WEB-INF/views/tiles/loginlayout.jsp">  
+         <put-attribute name="title" value="" />  
+        <put-attribute name="body" value="" />  
+    </definition>  
+    
+    <definition name="login" extends="base.login">
+     <put-attribute name="title" value="User login" />    
+        <put-attribute name="body" value="/WEB-INF/views/login.jsp" />  
+    </definition> 
+	<definition name="welcome" extends="base.definition">  
+        <put-attribute name="title" value="Welcome" />  
+        <put-attribute name="body" value="/WEB-INF/views/welcome.jsp" />  
+    </definition> 
+    <definition name="hello" extends="base.definition">  
+        <put-attribute name="title" value="index" />  
+        <put-attribute name="body" value="/WEB-INF/views/hello.jsp" />  
+    </definition> 
+     <definition name="user_register" extends="base.definition">  
+        <put-attribute name="title" value="Register" />  
+        <put-attribute name="body" value="/WEB-INF/views/user_register.jsp" />  
+    </definition> 
+     <definition name="role1" extends="base.definition">  
+        <put-attribute name="title" value="role" />  
+        <put-attribute name="body" value="/WEB-INF/views/role.jsp" />  
+    </definition>  
+     <definition name="change_password" extends="base.definition">  
+        <put-attribute name="title" value="Change Password" />  
+        <put-attribute name="body" value="/WEB-INF/views/change_password.jsp" />  
+    </definition> 
+    <definition name="profile" extends="base.definition">  
+        <put-attribute name="title" value="User Profile" />  
+        <put-attribute name="body" value="/WEB-INF/views/user_profile.jsp" />  
+    </definition> 
+     <definition name="test" extends="base.definition">  
+        <put-attribute name="title" value="User test" />  
+        <put-attribute name="body" value="/WEB-INF/views/test.jsp" />  
+    </definition> 
+    
+ <!-- file tiles --> 
+ 	<definition name="fileuploadform" extends="base.definition">  
+        <put-attribute name="title" value="file upload form" />  
+        <put-attribute name="body" value="/WEB-INF/views/files/fileuploadform.jsp" />  
+    </definition> 
+     <definition name="myfile" extends="base.definition">  
+        <put-attribute name="title" value="Own File" />  
+        <put-attribute name="body" value="/WEB-INF/views/files/my_file.jsp" />  
+    </definition>
+    
+    <definition name="imagesend" extends="base.definition">  
+        <put-attribute name="title" value="Image View" />  
+        <put-attribute name="body" value="/WEB-INF/views/files/imagesend.jsp" />  
+    </definition>
+    <definition name="videosend" extends="base.definition">  
+        <put-attribute name="title" value="Video View" />  
+        <put-attribute name="body" value="/WEB-INF/views/files/videosend.jsp" />  
+    </definition>
+    <definition name="pdfsend" extends="base.definition">  
+        <put-attribute name="title" value="Pdf View" />  
+        <put-attribute name="body" value="/WEB-INF/views/files/pdfsend.jsp" />  
+    </definition>
+    <definition name="audiosend" extends="base.definition">  
+        <put-attribute name="title" value="Audio View" />  
+        <put-attribute name="body" value="/WEB-INF/views/files/audiosend.jsp" />  
+    </definition>
+    <definition name="wordsend" extends="base.definition">  
+        <put-attribute name="title" value="Word View" />  
+        <put-attribute name="body" value="/WEB-INF/views/files/wordsend.jsp" />  
+    </definition>
+     <definition name="excelsend" extends="base.definition">  
+        <put-attribute name="title" value="Excel View" />  
+        <put-attribute name="body" value="/WEB-INF/views/files/excelsend.jsp" />  
+    </definition>
+     <definition name="sharefile" extends="base.definition">  
+        <put-attribute name="title" value="share file" />  
+        <put-attribute name="body" value="/WEB-INF/views/files/share_file.jsp" />  
+    </definition> 
+    <definition name="shareFile_department" extends="base.definition">  
+        <put-attribute name="title" value="shareFile Department" />  
+        <put-attribute name="body" value="/WEB-INF/views/files/shareFile_department.jsp" />  
+    </definition> 
+    <definition name="share_file_to_another" extends="base.definition">  
+        <put-attribute name="title" value="another share" />  
+        <put-attribute name="body" value="/WEB-INF/views/files/share_file_to_another.jsp" />  
+    </definition>
+     <definition name="share_file_another" extends="base.definition">  
+        <put-attribute name="title" value="share file another" />  
+        <put-attribute name="body" value="/WEB-INF/views/files/share_file_another.jsp" />  
+    </definition>
+     <definition name="viewfileDetail" extends="base.definition">  
+        <put-attribute name="title" value="Received Message" />  
+        <put-attribute name="body" value="/WEB-INF/views/files/view_fileDetail.jsp" />  
+    </definition>
+     <definition name="fileType" extends="base.definition">  
+        <put-attribute name="title" value="File Type" />  
+        <put-attribute name="body" value="/WEB-INF/views/files/fileType.jsp" />  
+    </definition>
+     <definition name="fileTypeList" extends="base.definition">  
+        <put-attribute name="title" value="File Type" />  
+        <put-attribute name="body" value="/WEB-INF/views/files/fileTypeList.jsp" />  
+    </definition>
+      <definition name="updateFileType" extends="base.definition">  
+        <put-attribute name="title" value="Update File Type" />  
+        <put-attribute name="body" value="/WEB-INF/views/files/updateFileType.jsp" />  
+    </definition>
+      <definition name="deleteFileType" extends="base.definition">  
+        <put-attribute name="title" value="Delete File Type" />  
+        <put-attribute name="body" value="/WEB-INF/views/files/deleteFileType.jsp" />  
+    </definition>
+    <definition name="departmentList" extends="base.definition">  
+        <put-attribute name="title" value="file upload form" />  
+        <put-attribute name="body" value="/WEB-INF/views/files/departmentList.jsp" />  
+    </definition> 
+ <!-- end of files -->
+ <!-- start message====================================================================== -->  
+ 	<definition name="messagesend" extends="base.definition">  
+        <put-attribute name="title" value="message" />  
+        <put-attribute name="body" value="/WEB-INF/views/message/messagesend.jsp" />  
+    </definition>
+    <definition name="viewMessage" extends="base.definition">  
+        <put-attribute name="title" value="message" />  
+        <put-attribute name="body" value="/WEB-INF/views/message/viewmessage.jsp" />  
+    </definition>
+    <definition name="receivedMessage" extends="base.definition">  
+        <put-attribute name="title" value="Received Message" />  
+        <put-attribute name="body" value="/WEB-INF/views/message/received_message.jsp" />  
+    </definition>
+    
+     <definition name="message_detail" extends="base.definition">  
+        <put-attribute name="title" value="Received Message" />  
+        <put-attribute name="body" value="/WEB-INF/views/message/message_detail.jsp" />  
+    </definition>
+    
+ <!-- end of message tiles -->
+  <!-- Changes  tiles -->
+  	  <definition name="forgot_password" extends="base.login">  
+        <put-attribute name="title" value="Frogot Password" />  
+        <put-attribute name="body" value="/WEB-INF/views/Changes/forgot_password.jsp" />  
+    </definition>
+     <definition name="change_department" extends="base.definition">  
+        <put-attribute name="title" value="change department" />  
+        <put-attribute name="body" value="/WEB-INF/views/Changes/change_department.jsp" />  
+    </definition>
+    <definition name="userlist" extends="base.definition">  
+        <put-attribute name="title" value="Userlist" />  
+        <put-attribute name="body" value="/WEB-INF/views/Changes/userlist.jsp" />  
+    </definition>
+  <!-- end of changes -->
+ </tiles-definitions>
